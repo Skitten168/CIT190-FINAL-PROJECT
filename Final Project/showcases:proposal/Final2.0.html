@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Time</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/finalProject2.0.css" media="all"/>
+</head>
+<body>
+<article class=" grid-container">
+<header class="title">
+ 	<h1>Web Arcade!</h1>
+ </header>
+ <section class="content">
+<p>Check out these games I have created for my final project in CIT 190 at NMC!<br>Click the links in the side menu to read descriptions of the games.</p>
+ </section>
+<section class="menu">
+ <nav id="mySidenav" class="sidenav">
+<h2>Click the links below!</h2> 
+	<ul>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<li><a href="../Final Project/puzzleTime.html">Puzzle Game<br> <hr>Test your puzzling skills</a></li>
+	<li><a href="../Final Project/snakeTime.html">Snake Game<br> <hr>Play the classic game Snake!</i></a></li>
+	<li><a href="../Final Project/jumpTime.html">Jumping Game<br><hr>Jump over the obstacles</a></li>
+	</ul>
+</nav>
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click for links to the games!</span>
+</div>
+</section>
+<footer class="contact">
+    <div class="icon-bar">
+        <p>&copy; Sam Kittendorf, CIT-190</p>
+        <p>email: kittens@mail.nmc.edu</p>
+        <a href="https://www.linkedin.com/in/samuel-kittendorf-2261b8195/"><i class="fa fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+</article>	
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        
+    }
+    function closeNav(){
+        document.getElementById("mySidenav").style.width = "0";
+        
+    }
+</script>	
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/FinalProject.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">GAMES!</span>
+                    <span class="profession">Have Fun!</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+               <li class="search-box">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="puzzleTime.html">
+                            <i class='bx bx-extension icon'></i>
+                            <span class="text nav-text">Puzzle Time!</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="snakeTime.html">
+                            <i class='bx bxl-apple icon'></i>
+                            <span class="text nav-text">Snake Time!</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="jumpTime.html">
+                            <i class='bx bx-run icon'></i>
+                            <span class="text nav-text">Jump time!</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="text">Web Games!</div>
+        <div class="text"> <---Check out these games I have made for my final project in CIT 190 at NMC</div>
+    </section>
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+    </script>
+</body>
+</html>

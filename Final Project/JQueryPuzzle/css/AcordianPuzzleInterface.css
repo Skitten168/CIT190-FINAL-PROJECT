@@ -1,0 +1,67 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+ }
+ button {
+  border: none;
+ }
+.accordion{
+  background-color:rgb(rgb13, 67, 28);
+  color: #666;
+  margin: 0;
+  padding: 0;
+  overflow: auto;}
+
+.accordion-control {
+  background-color: rgb(135, 207, 206);
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.5em 0.5em 0.7em;
+  margin: 0;
+  border-top: 1px solid #666;
+  border-radius: 5px;
+  width:100%;
+ }
+.accordion-panel {
+  display: none;
+  text-align: center;
+  }
+h1{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+body{
+    background-image: url(../media/pexels-dmitry-demidov-3852577.jpeg);
+    background-size:cover;
+}
+header{
+    color: #fff;
+    background-color: rgb(135, 207, 206);
+    border-radius: 10px;
+    text-align: center;
+}
+/* unvisited link */
+a:link {
+    color: rgb(0, 123, 255);
+    background-color: rgb(135, 207, 206);
+    border-radius: 5px;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(9, 45, 99);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>JQuery Tabs Final Interface</title>
+    <link rel="stylesheet" href="css/jqueryTabsBase.css"/>
+    <link rel="stylesheet" href="css/jqueryTabs.css" />
+  </head>
+  <body>
+    <header><h1>ARCADE ROOM</h1></header>
+    <section class="page">
+      <div class="tabs">
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1"><h3>Puzzle Time!</h3></a></li>
+          <li><a class="tab-control" href="#tab-2"><h3>Snake!</h3></a></li>
+          <li><a class="tab-control" href="#tab-3"><h3>Ball Fall!</h3></a></li>
+        </ul>
+        <div class="tab-panel active" id="tab-1">
+           <p>Solve some jigsaw puzzles with this jquery puzzle game!</p>
+           <a href="../Final Project/JQueryPuzzle/AcordianPuzzleInterface.html">Click here to solve some puzzles</a>
+           <img src="./media/neonJigsaw.png" alt="neon puzzle">
+        </div>
+        <div class="tab-panel" id="tab-2">
+            <p>Enjoy this classic cell phone game, Snake!</p>
+            <a href="SnakeGame/snakeTime.html">Click here to play Snake!</a>
+            <img src="./media/snake.png" alt="Snake Game">
+        </div>
+        <div class="tab-panel" id="tab-3">
+            <p>See how many gaps you can roll through with this javascript Ball-Falling Game!</p>
+            <a href="BallFall/BallFall.html">Click here to play!</a>
+            <img src="./media/neonBlast.jpg" alt="Neon Blast">
+        </div>
+      </div><!-- .tabs -->
+    </section><!-- .page -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script 
+        src="js/jqueryTabs.js">
+    </script>
+  </body>
+</html>

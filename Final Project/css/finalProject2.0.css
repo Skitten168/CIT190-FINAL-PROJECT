@@ -1,0 +1,247 @@
+html{
+	box-sizing: border-box;
+}
+body {
+	font-family:"papyrus";
+	font-size:1.5em;
+	background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    background-image: url(../media/gameRoom.jpeg);
+}
+nav {
+	width:100%;
+	height:auto;
+    background:#9625c6;
+    text-align:left;
+	box-sizing: border-box;
+    background-image: url(../media/gameRoom.jpeg);
+}
+/*nav a {
+    text-decoration:none;
+    width: fit-content;
+}*/
+nav ul li {
+	list-style:none;
+	border-bottom:rgb(82, 103, 108) 2px solid;
+	border-left:gray 2px solid;
+	text-align:left;
+	width:95%;
+	min-width:150px;
+	font-size:.8em;
+	margin-left:-30px;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background:#9625c6;
+    color:rgb(19, 223, 19);
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background:black;
+    color:white;
+}
+a:link, a:active{
+	color:rgb(120, 24, 125);
+	text-shadow:1px 1px black;
+}
+a:visited{
+	color: darkblue;
+	font-style: italic;
+}
+cite{
+	font-size: .7em;
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+    background-color: black;
+	background-size: auto;
+    box-shadow: 0 0 0 0 rgb(124, 41, 41);
+    transform: scale(1);
+	animation: pulse 1s 1;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+header{
+	width:100%;
+	margin-top:0%;
+	background:rgb(120, 24, 125);
+	padding:10px;
+	font-size:1.5em;  
+	box-sizing: border-box;
+    text-decoration: underline;
+
+}
+h1{
+	font-family: "papyrus";
+	color:white;
+    text-shadow:3px 3px gray;	
+    text-align:center;
+    font-size:5vmax;
+}
+h2{
+	color:rgb(90, 211, 14);
+    text-shadow:1px 1px gray;	
+    text-align:center;
+    font-size:2vmax;
+}
+h3{
+	color: black;
+	text-shadow: 2px 2px gray;
+}
+
+section, div{
+	background:rgb(102, 214, 21);
+	padding:5px;
+	margin-top:0px;
+}
+aside {
+    background: rgb(120, 24, 125);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+}
+img{
+	box-shadow:1px 2px #555;
+	min-width:150px;
+	width:100%;
+
+}
+.title{
+    background-image: url(../media/gameRoom.jpeg);
+}
+
+.indent{
+	text-indent:10px;
+}
+.center{
+	margin-right:auto;
+	margin-left:auto;
+}
+/*css grid*/
+.title{ grid-area:h; }
+.menu{ grid-area:n; }
+.content{ grid-area:m; }
+.right{ grid-area:a; }
+.contact{ grid-area:f; }
+
+/* For mobile phones: */
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h'
+		'n n n'
+		'm m a'
+		'm m f';
+	grid-gap:0px;
+	padding:4px;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h'
+		'n n n'
+		'm m a'
+		'm m f';
+	grid-gap:0px;
+	padding:5px;
+	/*background:gray;*/
+}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		'h h h h h h'
+		'n n n n n n'
+		'm m m m m f';
+	grid-gap:0px;
+	padding:1px;
+	background:black;
+}
+}
+.icon-bar {
+    font-size: small;
+	color: rgb(3, 7, 2);
+    height: auto;
+	width: 150px;
+	background-color: rgb(39, 179, 79);
+	overflow:auto;
+}
+
+.icon-bar a {
+	float: left; /* Float links side by side */
+	text-align: center; /* Center-align text */
+	width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+	padding: 12px 0; /* Some top and bottom padding */
+	transition: all 0.3s ease; /* Add transition for hover effects */
+	color: rgb(69, 204, 32); /* White text color */
+	font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+	background-color: #000; /* Add a hover color */
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.3s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #2fc918;
+	display: block;
+	transition: 0.3s;
+}
+
+/*.sidenav a:hover{
+	color: #f1f1f1;
+}*/
+
+.sidenav .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main{
+	transition: margin-left .5s;
+	padding: 2px;
+    background-color: rgb(120, 24, 125);
+    border: #5cbf2ad4;
+}
+
+@media screen and (max-height: 450px){
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
